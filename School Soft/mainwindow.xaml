@@ -21,7 +21,7 @@
         <Label x:Name="lblPass" Content="Password" HorizontalAlignment="Left" Margin="115,67,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
         <TextBox x:Name="tbxUser" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="25" Margin="56,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" TextChanged="tbxUser_TextChanged"/>
         <TextBox x:Name="tbxPassword" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="56,8,0,51" TextWrapping="Wrap" Width="180" Grid.Row="2" TextChanged="tbxPassword_TextChanged"/>
-        <Button x:Name="btnLogin" Content="Login" Margin="22,45,24,0" Grid.Row="1" VerticalAlignment="Top"  Height="25" Grid.Column="1" Click="btnLogin_Click" IsEnabled="False"/>
-        <Button x:Name="btnExit" Content="Exit" Margin="24,45,22,0" Grid.Row="1" VerticalAlignment="Top"  Height="25"/>
+        <Button x:Name="btnLogin" Content="Login" Margin="22,45,24,0" Grid.Row="1" VerticalAlignment="Top"  Height="25" Grid.Column="1" Click="btnLogin_Click"/>
+        <Button x:Name="btnExit" Content="Exit" Margin="24,45,22,0" Grid.Row="1" VerticalAlignment="Top"  Height="25" Click="btnExit_Click"/>
     </Grid>
 </Window>

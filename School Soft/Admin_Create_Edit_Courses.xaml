@@ -37,8 +37,8 @@
         <Button x:Name="btnEdit" Content="Edit" Margin="51,10,0,0" VerticalAlignment="Top" Height="25" Click="btnLogout_Click" FontWeight="Bold" HorizontalAlignment="Left" Width="80" Grid.Row="7" Grid.Column="1"/>
         <Button x:Name="btnAdd" Content="Add" Margin="60,10,0,0" VerticalAlignment="Top" Height="25" Click="btnLogout_Click" FontWeight="Bold" HorizontalAlignment="Left" Width="80" Grid.Row="7" Grid.Column="2"/>
         <Label x:Name="lblInfoCourse" Content=" Create or Edit Course Details" VerticalAlignment="Top" FontWeight="Bold" Height="26" HorizontalAlignment="Left" Width="256" Grid.ColumnSpan="2" Grid.Column="1"/>
-        <TextBox x:Name="tbxCourseDetails" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="153" Margin="10,28,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="522" TextChanged="textBox_TextChanged"/>
         <Label x:Name="lblAvailableCourses" Content="Available Courses:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,2,0,0" FontWeight="Bold" Width="126" Height="26" Grid.Row="6"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="23,28,0,0" Grid.Row="6" VerticalAlignment="Top" Width="509" Grid.ColumnSpan="3" Height="153"/>
 
     </Grid>
 </Window>

@@ -92,6 +92,11 @@
       <DependentUpon>Student_Dashboard.xaml</DependentUpon>
       <Link>Student_Dashboard.xaml.cs</Link>
     </Compile>
+    <Compile Include="SchoolSoftDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SchoolSoftDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Student-My Courses.xaml.cs">
       <DependentUpon>Student-My Courses.xaml</DependentUpon>
     </Compile>
@@ -178,6 +183,17 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="SchoolSoftDBDataSet.xsc">
+      <DependentUpon>SchoolSoftDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SchoolSoftDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SchoolSoftDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SchoolSoftDBDataSet.xss">
+      <DependentUpon>SchoolSoftDBDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

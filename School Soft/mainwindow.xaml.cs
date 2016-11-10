@@ -20,38 +20,59 @@ namespace School_Soft
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        int textLogin = 0;
+        int textPassword = 0;
+      
+    public MainWindow()
         {
             InitializeComponent();
+
+            if ((textLogin == 1) && (textPassword == 1))
+            {
+                btnLogin.IsEnabled = true;
+            }
+
         }
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
+            Admin_Dashboard Admin = new Admin_Dashboard();
+ 
+            //Admin.Show();
+            this.Hide();
+            var Admin_dc = new Admin_Dashboard();
+            Admin_dc.Closed += (s, args) => this.Close();
+            Admin_dc.Show();
 
         }
 
         private void tbxUser_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (tbxUser.Text == String.Empty && tbxPassword.Text == String.Empty)
-            {
-                btnLogin.IsEnabled = true;
-            }
-            else btnLogin.IsEnabled = false;
 
 
         }
 
         private void tbxPassword_TextChanged(object sender, TextChangedEventArgs e)
         {
-           // if (tbxPassword.Text == String.Empty)
-         //   {
-         //       btnLogin.IsEnabled = false;
-         //   }
+          
 
-         //   else
-          //  {
-             //   btnLogin.IsEnabled = true;
-          //  }
+            // if (tbxPassword.Text == String.Empty)
+            //   {
+            //       btnLogin.IsEnabled = false;
+            //   }
+
+            //   else
+            //  {
+            //   btnLogin.IsEnabled = true;
+            //  }
         }
-    }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+
+
+            Close();
+        }
+        
+}
 }
