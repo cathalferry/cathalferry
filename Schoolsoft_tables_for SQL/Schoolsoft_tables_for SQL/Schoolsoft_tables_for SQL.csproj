@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6749EAF6-3ED1-44DF-A44F-F74EE305D2CF}</ProjectGuid>
+    <ProjectGuid>{C5A1178F-83F0-423D-A151-B771357EB00D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>School_Soft</RootNamespace>
-    <AssemblyName>School Soft</AssemblyName>
+    <RootNamespace>Schoolsoft_tables_for_SQL</RootNamespace>
+    <AssemblyName>Schoolsoft_tables_for SQL</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -70,67 +70,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Admin_Create Student Account.xaml.cs">
-      <DependentUpon>Admin_Create Student Account.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Admin_Create_Edit_Courses.xaml.cs">
-      <DependentUpon>Admin_Create_Edit_Courses.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Admin_Dashboard.xaml.cs">
-      <DependentUpon>Admin_Dashboard.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Admin_Edit_Student_Record.xaml.cs">
-      <DependentUpon>Admin_Edit_Student_Record.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Admin_Search_Records.xaml.cs">
-      <DependentUpon>Admin_Search_Records.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Admin_Tuition_Screen.xaml.cs">
-      <DependentUpon>Admin_Tuition_Screen.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="C:\Users\Windows\Desktop\Schoohlsoft\Student_Dashboard.xaml.cs">
-      <DependentUpon>Student_Dashboard.xaml</DependentUpon>
-      <Link>Student_Dashboard.xaml.cs</Link>
-    </Compile>
-    <Compile Include="SchoolSoftDBDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SchoolSoftDBDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Student-My Courses.xaml.cs">
-      <DependentUpon>Student-My Courses.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Student_mydetails.xaml.cs">
-      <DependentUpon>Student_mydetails.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Student_Tuition.xaml.cs">
-      <DependentUpon>Student_Tuition.xaml</DependentUpon>
-    </Compile>
-    <Page Include="Admin_Create Student Account.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Admin_Create_Edit_Courses.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Admin_Dashboard.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Admin_Edit_Student_Record.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Admin_Search_Records.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Admin_Tuition_Screen.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="mainwindow.xaml">
+    <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -138,27 +78,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="mainwindow.xaml.cs">
-      <DependentUpon>mainwindow.xaml</DependentUpon>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="C:\Users\Windows\Desktop\Schoohlsoft\Student_Dashboard.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-      <Link>Student_Dashboard.xaml</Link>
-    </Page>
-    <Page Include="Student-My Courses.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Student_mydetails.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Student_Tuition.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -183,28 +106,17 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <None Include="SchoolSoftDBDataSet.xsc">
-      <DependentUpon>SchoolSoftDBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="SchoolSoftDBDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>SchoolSoftDBDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="SchoolSoftDBDataSet.xss">
-      <DependentUpon>SchoolSoftDBDataSet.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="SchoolSoftDB.mdf">
+    <Content Include="SchoolSoft.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="SchoolSoftDB_log.ldf">
+    <Content Include="SchoolSoft_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>SchoolSoftDB.mdf</DependentUpon>
+      <DependentUpon>SchoolSoft.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
